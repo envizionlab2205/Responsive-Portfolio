@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    background-color: #dcdcdc;
+}
+
+/* general */
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    width: 200px;
+    margin-left: 80px;
+    margin-top: 0;
+    float: left;
+}
+
+h2 {
+    font-size: 24px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 15px;
+    margin: 0;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    text-align: center;
+    font-size: 16px;
+}
+
+p { 
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0;
+    padding-top: 100px;
+    clear: both;
+}
+
+#main-bio {
+    max-width: 960px;
+    float: left;
+    margin: 0;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    margin-left: 80px;
+    height: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+#contact-info {
+    float: left;
+    margin: 0;
+    clear: both;
+}
+
+#bio-image {
+    width: 200px;
+    float: left;
+    padding: 20px;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    clear: both;
+}
+
+/* main */
+
+.main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    margin: 0;
+    margin-left: 80px;
+}
+
+#main-container {
+    padding-top: 100px;
+    min-height: calc(100vh - 70px);
+}
+
+/* header */
+
+.mastheader {
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#logo {
+    float: left;
+    text-decoration: none;
+    height: 58px;
+    font-weight: 700px;
+}
+
+nav {
+    float: right;
+    margin-bottom: 10px;
+    width: 390px;
+    margin-top: 10px;
+}
+
+nav a {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #777;
+    border-left: 1px solid #ddd;
+    list-style-type: none;
+}
+
+nav a:first-child {
+    border-left: none;
+}
+
+nav a:hover {
+    color: #d21034;
+}
+
+/* footer */
+
+footer {
+    font-size: 10px;
+    background-color: #666666;
+    color: #eee;
+    height: 50px;
+    border-top: 5px solid #4aaaa5;
+    margin-top: 140px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+/*contact page */
+
+#contact-form {
+    float: left;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#contact-form ul {
+    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+label,
+input[type=text],
+input[type=e-mail],
+textarea {
+    width: 100%;
+    display: block;
+}
+
+input[type=text] {
+    height: 35px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+input[type=e-mail] {
+    height: 35px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #4aaaa5;
+    border: none;
+}
+
+/*portfolio page */
+
+.work {
+    float: left;
+    margin: 40px;
+    width: 200px;
+    position: relative;
+    overflow: auto;
+}
+
+.work:nth-child(even) {
+    margin-right: 40px;
+}
+
+.work img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    border: none;
+    opacity: 0.8;
+}
+
+.work h3 {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 5px;
+    border-bottom: 0;
+    bottom: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+.auth-image {
+    margin-top: 10px;
+    margin-right: 20px;
+    float: left;
+    width: 200px;
+    height: auto;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 640px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (max-width: 640px) {
+    header {
+        position: static;
+    }
+}
+
