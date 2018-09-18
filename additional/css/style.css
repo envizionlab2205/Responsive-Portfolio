@@ -105,15 +105,27 @@ p {
     min-height: calc(100vh - 70px);
 }
 
-/* header */
-
 .mastheader {
     border-bottom: 2px solid #ccc;
     width: 100%;
     z-index: 99;
-    margin: 0;
+    margin-top: 20px;
     overflow: hidden;
     background-color: #ffffff;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    width: 390px;
+    margin-top: 10px;
+    color: #777;
 }
 
 #logo {
@@ -123,28 +135,31 @@ p {
     font-weight: 700px;
 }
 
-nav {
-    float: right;
-    margin-bottom: 10px;
-    width: 390px;
-    margin-top: 10px;
-}
-
-nav a {
-    padding: 15px;
-    display: inline-block;
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    color: #777;
-    border-left: 1px solid #ddd;
-    list-style-type: none;
+    font-size: 17px;
 }
 
-nav a:first-child {
-    border-left: none;
-}
-
-nav a:hover {
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
     color: #d21034;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
 
 /* footer */
@@ -264,22 +279,9 @@ input[type=submit] {
     width: 200px;
     height: auto;
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 640px) {
+ 
+.topnav.responsive a {
+    float: right;
+    display: block;
+    text-align: left;
 }
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-@media only screen and (max-width: 640px) {
-    header {
-        position: static;
-    }
-}
-
